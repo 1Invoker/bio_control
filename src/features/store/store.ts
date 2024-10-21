@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import todoReducer from '../../features/todo/todoSlice';
+import labReducer from '../slices/Slice';
 
 export const store = configureStore({
   reducer: {
-    todos: todoReducer,
+    labs: labReducer,
   },
 });
 export type RootState = ReturnType<typeof store.getState>;

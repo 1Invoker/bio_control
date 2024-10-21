@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 
-const useToDo = () => {
+const Lab = () => {
   const [task, setTask] = useState<string>('');
   const [tasks, setTasks] = useState<string[]>([]);
 
