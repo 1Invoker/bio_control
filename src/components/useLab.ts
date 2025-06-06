@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 
-const Lab = () => {
-  const [task, setTask] = useState<string>('');
-  const [tasks, setTasks] = useState<string[]>([]);
+export const useLab = () => {
+  const [analyz, setAnalyz] = useState<string>('');
+  const [card, setCard] = useState<string[]>([]);
 
-  const taskInput = (e:React.ChangeEvent<HTMLInputElement>) => {
-    setTask(e.target.value);
+  const taskInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setAnalyz(e.target.value);
   };
 };
